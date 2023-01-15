@@ -5361,7 +5361,7 @@ $(document).ready(() => {
   checkAllowedDomains() ? gen(default_text) : (top.location.href = "https://namamlkeren.com/");
 
   function checkAllowedDomains() {
-    var a = ["namamlkeren.com",];
+    var a = ["127.0.0.1:5501", "namamlkeren.com",];
     var b = top.location.href || window.location.href;
     b = b.replace(/(^\w+:|^)\/\//, "").split("/")[0];
     return a.includes(b)
